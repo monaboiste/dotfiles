@@ -1,0 +1,5 @@
+# ya pkg add Mintass/rose-pine-dawn
+# ya pkg add yazi-rs/flavors:catppuccin-macchiato
+[flavor]
+# light = "rose-pine-dawn"
+dark = "catppuccin-macchiato"
