@@ -1,0 +1,31 @@
+# General
+macos-icon = chalkboard
+
+# Tmux
+command = /opt/homebrew/bin/tmux new-session -A -D -s main
+macos-option-as-alt = right
+
+# Looks
+font-size = 14
+font-family = JetBrainsMono NFM SemiBold
+
+background-opacity = 0.9
+background-blur = 20
+
+bell-features = no-title
+title = " "
+macos-titlebar-proxy-icon = hidden
+macos-titlebar-style = transparent
+macos-window-buttons = hidden
+
+window-width = 110
+window-height = 25
+window-decoration = auto
+window-padding-x = 4
+window-padding-y = 4
+
+cursor-style = underline
+cursor-style-blink = false
+
+background = 23232b
+theme = Catppuccin Mocha
