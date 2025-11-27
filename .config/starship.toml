@@ -1,0 +1,88 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+palette = "catppuccin_mocha"
+
+format = """
+$directory\
+$git_branch\
+$git_commit\
+$git_status\
+$git_metrics\
+$git_state\
+$java\
+$kotlin\
+$haskell\
+$python\
+$package\
+$docker_context\
+$cmd_duration\
+$line_break\
+$character\
+"""
+
+[character]
+success_symbol = "[❯](89b4fa)"
+error_symbol = "[✕](peach)"
+vimcmd_symbol = "[❮](subtext1)"
+vimcmd_replace_one_symbol = '[❮](fg:subtext1)'
+vimcmd_replace_symbol = '[❮](fg:subtext1)'
+vimcmd_visual_symbol = '[❮](fg:rosewater)'
+
+[git_branch]
+style = "bold mauve"
+
+[directory]
+truncation_length = 4
+style = "bold lavender"
+
+[package]
+disabled = false
+symbol = "󰏗"
+style = "fg:color_env"
+format = '([$symbol( $version)]($style) )'
+
+[java]
+symbol = ""
+style = "fg:mauve"
+format = '([$symbol( $version)]($style) )'
+
+[docker_context]
+symbol = ""
+style = "fg:color_docker"
+format = '([$symbol( $context)]($style) )'
+
+[cmd_duration]
+min_time = 2000
+format = '([󱫑 $duration]($style) )'
+style = 'fg:rosewater'
+show_milliseconds = false
+disabled = false
+
+# https://github.com/catppuccin/starship/blob/main/starship.toml
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
