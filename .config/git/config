@@ -1,0 +1,14 @@
+[user]
+  name = monaboiste
+  email = monika.szumna4@gmail.com
+[alias]
+  lg = log --graph --abbrev-commit --decorate --format=format:'%C(brightyellow)%h%C(reset) - %C(green)(%ar)%C(reset) %s%C(reset) %C(red)- %an%C(reset)%C(yellow)%d%C(reset)'
+  s = status
+[tag]
+  sort = -v:refname
+[diff]
+  tool = vimdiff
+[merge]
+  tool = vimdiff
+[difftool]
+  prompt = false
