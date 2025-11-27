@@ -1,0 +1,12 @@
+# Stow
+.stowrc
+
+# MacOS
+.DS_Store
+
+# Git
+.git
+.gitignore
+^/README.*
+^/LICENSE.*
+^/COPYING
