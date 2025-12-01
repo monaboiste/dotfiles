@@ -5,6 +5,16 @@ macos-icon = chalkboard
 command = /opt/homebrew/bin/tmux new-session -A -D -s main
 macos-option-as-alt = right
 
+# Keybinds
+keybind = ctrl+l=clear_screen
+keybind = super+alt+'=new_split:right
+keybind = super+alt+5=new_split:down
+keybind = super+alt+arrow_down=goto_split:down
+keybind = super+alt+arrow_left=goto_split:left
+keybind = super+alt+arrow_right=goto_split:right
+keybind = super+alt+arrow_up=goto_split:up
+keybind = super+w=close_surface
+
 # Looks
 font-size = 14
 font-family = JetBrainsMono NFM SemiBold
