@@ -6,7 +6,7 @@
 #       the `alias` function itself with no arguments will actually print all too
 #
 
-alias python=/opt/homebrew/bin/python3.12
+alias python3=/opt/homebrew/bin/python3.14
 alias ls='eza'
 alias ll='eza -lg --icons'
 alias la='eza -lag --icons'
