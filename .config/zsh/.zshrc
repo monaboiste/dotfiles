@@ -37,7 +37,3 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/private/.local/bin/sdkman"
-[[ -s "/Users/private/.local/bin/sdkman/bin/sdkman-init.sh" ]] && source "/Users/private/.local/bin/sdkman/bin/sdkman-init.sh"
