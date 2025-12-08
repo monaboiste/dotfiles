@@ -9,4 +9,5 @@
 .gitignore
 ^/README.*
 ^/LICENSE.*
+^/TODO.*
 ^/COPYING
