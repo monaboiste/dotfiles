@@ -4,6 +4,8 @@
 [ ] ghostty search
 [ ] allow clicking links in ghostty
 [-] mods - testing - better output
-[ ] better copy / paste
+[ ] better copy / paste / copy from tmux
 [ ] better navigation (vim motions)
+[ ] fix tmux new session popup
+[ ] nvim
 
