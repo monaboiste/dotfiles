@@ -8,12 +8,18 @@
 
 # Git
 
-.git
-.gitignore
-^/README._
-^/LICENSE._
-^/TODO.\*
+\.git
+\.gitignore
+\.gitmodules
+
+^/README.*
+^/LICENSE.*
+^/TODO.*
 ^/COPYING
+
+# Claude
+
+.claude
 
 # Other
 
