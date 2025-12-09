@@ -8,4 +8,3 @@
 [ ] better navigation (vim motions)
 [ ] fix tmux new session popup
 [ ] nvim
-[ ] optimize zsh startup time

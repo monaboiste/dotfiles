@@ -9,8 +9,8 @@ typeset -U path
 /opt/homebrew/bin/brew shellenv > /dev/null
 
 path=(
-    "/opt/homebrew/bin"
-    $path
+  "/opt/homebrew/bin"
+  $path
 )
 
 export PATH
@@ -24,11 +24,10 @@ source $XDG_CONFIG_HOME/zsh/devtool/*.zsh(N)
 
 # History
 HISTSIZE=5000
-HISTFILE="$XDG_CACHE_HOME/.zsh_history"
+HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/.zsh_history"
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
-zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
-compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-$ZSH_VERSION
+
 setopt appendhistory
 setopt sharehistory
 setopt hist_ignore_space
@@ -36,3 +35,4 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
+
