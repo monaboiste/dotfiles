@@ -37,4 +37,8 @@ Host github.com:<USERNAME>
   IdentitiesOnly yes
   IdentityFile ~/.ssh/id_ed25519_<USERNAME>
 ```
-
+Setup themes:
+```sh
+ya pkg add yazi-rs/flavors:catppuccin-macchiato
+fast-theme XDG:catppuccin-mocha
+```
