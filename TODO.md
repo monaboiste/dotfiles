@@ -1,5 +1,4 @@
 [ ] change color tmux status bar - from bg reg to fg yellow
-[x] remove hard-coded paths in tmux
 [ ] yazi auto install flavours
 [ ] ghostty search
 [ ] allow clicking links in ghostty
@@ -8,3 +7,5 @@
 [ ] better navigation (vim motions)
 [ ] fix tmux new session popup
 [ ] nvim
+[ ] optimize sdkman sourcing
+[ ] theme https://github.com/catppuccin/zsh-fsh?tab=readme-ov-file for fsh
