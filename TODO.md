@@ -9,3 +9,4 @@
 [ ] nvim
 [ ] optimize sdkman sourcing
 [ ] theme https://github.com/catppuccin/zsh-fsh?tab=readme-ov-file for fsh
+[ ] fix sdkman completions setup - patch sdkman-init.sh script
