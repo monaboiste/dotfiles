@@ -1,13 +1,20 @@
 # Stow
+
 .stowrc
 
 # MacOS
+
 .DS_Store
 
 # Git
+
 .git
 .gitignore
-^/README.*
-^/LICENSE.*
-^/TODO.*
+^/README._
+^/LICENSE._
+^/TODO.\*
 ^/COPYING
+
+# Other
+
+.editorconfig
