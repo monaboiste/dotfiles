@@ -35,7 +35,7 @@ zinit::update() {
   echo "✅ All Zinit plugins updated!"
 }
 
-alias help::vim-tips='echo "$(cat <<-'EOF'
+alias help::vim_tips='echo "$(cat <<-'EOF'
 x Last line edit: G
 x Multiline edit:
   - ctrl+v (visual mode)
@@ -47,7 +47,7 @@ x Jump:
 EOF
 )"'
 
-alias help::yazi-tips='echo "$(cat <<-'EOF'
+alias help::yazi_tips='echo "$(cat <<-'EOF'
 x Search:
   - Search in current directory: /
   - Fuzzy find: Z
@@ -75,6 +75,13 @@ EOF
 alias help::keychain='echo "$(cat <<-'\''EOF'\''
 x Add secret: security add-generic-password -a $USER -s "MY_SECRET" -w "supersecret"
 x Retrieve secret: export SECRET_KEY=$(security find-generic-password -s "MY_SECRET" -w)
+EOF
+)"'
+
+alias help::zsh_perf='echo "$(cat <<-'\''EOF'\''
+zmodload zsh/zprof
+#... .zshrc
+zprof
 EOF
 )"'
 
