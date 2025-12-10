@@ -52,6 +52,7 @@ x Search:
   - Search in current directory: /
   - Fuzzy find: Z
   - Filter files: f
+  - Search for files: s
   - Search content: S
 x Navigation:
   - Base navigating: g (e.g. gh or gc)
