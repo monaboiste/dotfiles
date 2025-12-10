@@ -36,5 +36,6 @@ window-padding-y = 4
 cursor-style = underline
 cursor-style-blink = false
 
+selection-invert-fg-bg = true
 background = #23232b
 theme = Catppuccin Mocha
