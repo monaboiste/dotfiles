@@ -36,5 +36,5 @@ window-padding-y = 4
 cursor-style = underline
 cursor-style-blink = false
 
-background = 23232b
+background = #23232b
 theme = Catppuccin Mocha
