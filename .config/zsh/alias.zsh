@@ -44,6 +44,7 @@ x Multiline edit:
 x Jump:
   - by a paragraph: shift+[ or shift+]
   - to the next parenthesis: %
+  - to char: f
 EOF
 )"'
 
