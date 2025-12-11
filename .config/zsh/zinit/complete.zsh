@@ -13,8 +13,13 @@ zinit wait lucid for \
   atload"!_zsh_autosuggest_start" \
     zsh-users/zsh-autosuggestions
 
-# Sdkman completion
+# Completion for sdkman
+zinit ice as"completion" wait lucid
 zinit snippet OMZP::sdk
+
+# Completion for fd
+zinit ice as"completion" wait lucid
+zinit snippet https://raw.githubusercontent.com/sharkdp/fd/refs/heads/master/contrib/completion/_fd
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
