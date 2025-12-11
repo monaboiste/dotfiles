@@ -16,7 +16,9 @@ keybind = super+w=close_surface
 
 # Looks
 font-size = 14
-font-family = JetBrainsMono NFM SemiBold
+font-family = JetBrainsMono Nerd Font
+font-thicken = true
+font-thicken-strength = 200
 
 background-opacity = 0.9
 background-blur = 20
@@ -35,7 +37,7 @@ window-padding-y = 4
 
 cursor-style = underline
 cursor-style-blink = false
+adjust-cursor-thickness = 5
 
-selection-invert-fg-bg = true
 background = #23232b
 theme = Catppuccin Mocha
