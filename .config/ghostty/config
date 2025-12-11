@@ -2,7 +2,7 @@
 macos-icon = chalkboard
 
 # Tmux
-command = /opt/homebrew/bin/tmux new-session -A -D -s main
+command = /opt/homebrew/bin/tmux new-session
 macos-option-as-alt = right
 
 # Keybinds
