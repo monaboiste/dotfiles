@@ -17,10 +17,9 @@ export PATH
 
 [ -f "$XDG_CONFIG_HOME"/zsh/binding.zsh ] && source "$XDG_CONFIG_HOME"/zsh/binding.zsh
 [ -f "$XDG_CONFIG_HOME"/zsh/alias.zsh ] && source "$XDG_CONFIG_HOME"/zsh/alias.zsh
-[ -f "$XDG_CONFIG_HOME"/zsh/zinit/zinit.zsh ] && source "$XDG_CONFIG_HOME"/zsh/zinit/zinit.zsh
+[ -f "$XDG_CONFIG_HOME"/zsh/zinit.zsh ] && source "$XDG_CONFIG_HOME"/zsh/zinit.zsh
 for f in $XDG_CONFIG_HOME/zsh/devtool/*.zsh(N); do source $f; done
 for f in $XDG_CONFIG_HOME/zsh/function/*.zsh(N); do source $f; done
-[ -f "$XDG_CONFIG_HOME"/zsh/zinit/complete.zsh ] && source "$XDG_CONFIG_HOME"/zsh/zinit/complete.zsh
 [ -f "$XDG_CONFIG_HOME"/zsh/prompt.zsh ] && source "$XDG_CONFIG_HOME"/zsh/prompt.zsh
 
 # History
