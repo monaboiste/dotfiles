@@ -97,6 +97,8 @@ function aws::rotate_keys() {
   aws configure set aws_secret_access_key "$secret_key" --profile "$profile"
   aws configure set aws_session_token "$session_token" --profile "$profile"
 
+  export AWS_PROFILE="$profile"
+
   printf "----------------------------------------\n"
   printf "[SUCCESS]\n"
   printf "Access Key ID: %s\n" "$key_id"
