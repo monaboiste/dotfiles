@@ -14,6 +14,7 @@ $kotlin\
 $python\
 $package\
 $docker_context\
+$aws\
 $cmd_duration\
 $line_break\
 $character\
@@ -37,7 +38,7 @@ style = "bold lavender"
 [package]
 disabled = false
 symbol = "󰏗"
-style = "fg:color_env"
+style = "fg:mauve"
 format = '([$symbol( $version)]($style) )'
 
 [java]
@@ -52,8 +53,13 @@ format = '([$symbol( $version)(\($virtualenv\))]($style) )'
 
 [docker_context]
 symbol = ""
-style = "fg:color_docker"
+style = "fg:sapphire"
 format = '([$symbol( $context)]($style) )'
+
+[aws]
+symbol = ""
+style = "fg:yellow"
+format = '([$symbol( $profile)]($style) )'
 
 [cmd_duration]
 min_time = 2000
