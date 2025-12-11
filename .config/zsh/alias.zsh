@@ -86,6 +86,8 @@ alias help::zsh_perf='echo "$(cat <<-'\''EOF'\''
 zmodload zsh/zprof
 #... .zshrc
 zprof
+
+time zsh -i -c exit
 EOF
 )"'
 
