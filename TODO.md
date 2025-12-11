@@ -4,5 +4,4 @@
 [ ] fix tmux new session popup
 [ ] nvim
 [ ] explore ftp browsers e.g. https://github.com/boydaihungst/gvfs.yazi
-[ ] starship - fix prompt for python and venv
 [ ] starship - fix prompt for aws

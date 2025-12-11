@@ -11,7 +11,6 @@ $git_metrics\
 $git_state\
 $java\
 $kotlin\
-$haskell\
 $python\
 $package\
 $docker_context\
@@ -45,6 +44,11 @@ format = '([$symbol( $version)]($style) )'
 symbol = ""
 style = "fg:mauve"
 format = '([$symbol( $version)]($style) )'
+
+[python]
+symbol = ""
+style = "fg:mauve"
+format = '([$symbol( $version)(\($virtualenv\))]($style) )'
 
 [docker_context]
 symbol = ""
