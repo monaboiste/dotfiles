@@ -5,7 +5,7 @@ My dotfiles configurations managed by stow.
 Install bundle:
 
 ```sh
-brew bundle
+brew bundle install --file ./.config/homebrew/Brewfile
 ```
 
 Symlink to parent directory:
