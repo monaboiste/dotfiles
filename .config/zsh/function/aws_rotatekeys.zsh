@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 function _aws::help() {
-  cat <<'EOF'
+  cat <<-'EOF'
 Usage:
   aws::rotate_keys [profile]
 
@@ -11,12 +11,33 @@ Arguments:
 
 Description:
   Rotates AWS temporary credentials using AWS SSO.
+  Automatically refreshes short-lived AWS access keys for a given SSO profile.
 
 Examples:
   aws::rotate_keys
   aws::rotate_keys myprofile
   aws::rotate_keys --help
 
+Requirements:
+
+  1. Dependencies
+     - aws
+     - jq
+
+  2. AWS SSO configuration
+     Example ~/.aws/config:
+
+     [profile playground]
+     sso_session = company
+     sso_account_id = 0001
+     sso_role_name = teamname_playground_rw
+     region = eu-west-1
+     output = json
+
+     [sso-session company]
+     sso_start_url = https://company.awsapps.com/start
+     sso_region = us-east-1
+     sso_registration_scopes = sso:account:access
 EOF
 }
 
@@ -31,16 +52,8 @@ function _aws::check_dependencies() {
   return 0
 }
 
-#######################################
-# Rotates AWS Access Keys from SSO to [default] and specified profile.
 #
-# Arguments:
-#   1: profile (optional, default: "playground")
-#      Pass -h or --help to see usage.
-# Outputs:
-#   Writes status to stdout/stderr.
-#   Updates ~/.aws/credentials.
-#######################################
+# main
 function aws::rotate_keys() {
   if [[ "$1" == "--help" ]]; then
     _aws::help
@@ -92,6 +105,8 @@ function aws::rotate_keys() {
   aws configure set aws_access_key_id "$key_id" --profile default
   aws configure set aws_secret_access_key "$secret_key" --profile default
   aws configure set aws_session_token "$session_token" --profile default
+
+  printf "=> Saving credentials to [%s] profile in %s...\n" "$profile" "$cred_file"
 
   aws configure set aws_access_key_id "$key_id" --profile "$profile"
   aws configure set aws_secret_access_key "$secret_key" --profile "$profile"
