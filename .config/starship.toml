@@ -36,6 +36,9 @@ style = "bold mauve"
 truncation_length = 4
 style = "bold lavender"
 
+[fill]
+symbol = ' '
+
 [package]
 disabled = false
 symbol = "󰏗"
