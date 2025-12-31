@@ -8,6 +8,8 @@ export XDG_BIN_HOME="${XDG_BIN_HOME:-$HOME/.local/bin}"
 
 export ZDOTDIR=$HOME/.config/zsh
 
+export EDITOR=vim
+
 export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
 export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
 export MAVEN_OPTS=-Dmaven.repo.local="$XDG_DATA_HOME"/maven/repository
